@@ -1,0 +1,25 @@
+GET http://localhost:4000/dogs
+
+###
+GET http://localhost:4000/dogs/Roger
+
+###
+POST http://localhost:4000/dogs/
+content-type: application/json
+
+{
+    "name": "Neow",
+    "age": 10
+}
+
+###
+PUT http://localhost:4000/dogs/Neow
+Content-Type: application/json
+
+{
+    "name": "Neow",
+    "age": 100
+}
+
+###
+DELETE http://localhost:4000/dogs/Neow
